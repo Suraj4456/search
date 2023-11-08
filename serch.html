@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="s.png">
+    <title>Search Hear</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .searchbar{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+            flex-direction: column;
+            gap: 5vw;
+        }
+        form{
+            background-color: red;
+            width: 60%;
+            height: 15vh;
+            border-radius: 10vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        input{
+            height: 90%;
+            width: 75%;
+            border: 0;
+            outline: none;
+            background: transparent;
+            font-size: 2vw;
+        }
+        ::placeholder{
+            font-size: 2vw;
+            color: white;
+        }
+        button{
+            width: 15%;
+            height: 100%;
+            font-size: 2vw;
+            font-weight: 800;
+            background: transparent;
+            border: 0;
+            outline: none;
+        }
+        .short{
+            height: 30vh;
+            width: 70%;
+            border: 2px solid rgba(0, 0, 0, 0.466);
+            background:transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1vw 1vw;
+            box-sizing: border-box;
+        }
+        .short img{
+            width: 35px;
+            margin-right: 3vw;
+        }
+
+        .short a{
+            width: 45%;
+            border: 3px solid red;
+            text-decoration: none;
+            color: white;
+            background-color: red;
+        }
+        .short a div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="searchbar">
+        <form action="https://www.google.com/search" method="get" target="_blank">
+            <input type="text" placeholder="Search Hear..." name="q">
+            <button type="submit">search</button>
+        </form>
+        <div class="short">
+            <a href="https://www.facebook.com/" target="_blank">
+                <div>
+                    <img src="facebook.png" >
+                    <h1>FACEBOOK</h1>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/" target="_blank">
+                <div>
+                    <img src="youtube.png" >
+                    <h1>YouTube</h1>
+                </div>
+            </a>
+
+            <a href="https://www.instagram.com/  " target="_blank">
+                <div>
+                    <img src="instagram.png"">
+                    <h1>INSTAGRAM</h1>
+                </div>
+            </a>
+
+            <a href="https://twitter.com/" target="_blank">
+                <div>
+                    <img src="twitter.png">
+                    <h1>TWITTER</h1>
+                </div>
+            </a>
+    </div>
+</body>
+</html>
